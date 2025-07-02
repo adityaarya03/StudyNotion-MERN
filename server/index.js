@@ -25,7 +25,7 @@ app.use(cookieParser());
 
 const whitelist = process.env.CORS_ORIGIN
   ? JSON.parse(process.env.CORS_ORIGIN)
-  : ["*"];
+  : [];
 
 app.use(
   cors({
